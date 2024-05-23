@@ -3,42 +3,87 @@
   padding: 0;
 }
 
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-form{
-    width: 96%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+form {
+  width: 96%;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-form fieldset{
-    padding: 20px 40px;
-    border: solid 1px #ccc;
+form fieldset {
+  padding: 20px 40px;
+  border: solid 1px #ccc;
 }
 
 form legend {
-    font-size: 17px;
-    color: rgb(130, 130, 130);
-    text-align: left;
+  font-size: 17px;
+  color: rgb(130, 130, 130);
+  text-align: left;
 }
 
-form input[type=text]{
-    display: inline-block;
+form input[type="text"] {
+  display: inline-block;
+  margin-top: 30px;
+  width: 80%;
+  padding: 10px 13px;
+  font-family: tahoma;
+}
+
+form input[type="text"]:focus,
+form select:focus, form textarea:focus {
+  outline: 0;
+  border: 1px solid #ccc;
+}
+
+form select {
+  color: rgb(100, 100, 100);
+  width: calc(80% + 30px);
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 13px;
+  border: 1px solid #ccc;
+}
+
+form h2 {
+  margin-top: 20px;
+  color: rgb(100, 100, 100);
+}
+
+.input {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.input span {
+  margin-left: 13px;
+  font-size: 16px;
+  color: rgb(130, 130, 130);
+}
+
+form textarea{
     margin-top: 30px;
     width: 80%;
     padding: 10px 13px;
+    resize: none;
+    border: 1x solid #ccc;
+    height: 140px;
+    font-family: tahoma;
 }
 
-form input[type=text]:focus{
-    outline: 0;
-}
-
-form select{
-    width: calc(80% + 30px);
-    margin-top: 30px;
-    display: inline-block;
-    padding: 10px 13px;
+form input[type="submit"] {
+  margin-top: 30px;
+  bottom: 0;
+  background-color: rgb(140, 140, 140);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: 2px solid rgb(130, 130, 130);
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
 }
